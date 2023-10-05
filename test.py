@@ -1,7 +1,7 @@
 def add(a,b):
     return a+b
 
-def minus(a,b):
+def subtraction(a,b):
     return a-b
     
 def product(a,b):
