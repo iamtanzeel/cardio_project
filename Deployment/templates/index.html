@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cardiovascular Disease Diagnosis</h1>
+    <!--<form ></form>>-->
+    <form action = "{{url_for('predict')}}" method="post">
+
+        <select type = "number" id="gender" name="gender" placeholder="gender"required="required">
+            <option >Select Gender</option>
+            <option value="1">Female</option>
+            <option value="2">Male</option></select><br>
+
+        <input type="number" name="age" placeholder="Age"required="required">
+            <br>
+        <!-- <input type="text" name="gender" placeholder="Gender"required="required"> -->
+        <input type="number" name="height" placeholder="Height"required="required">
+        <br>
+        <input type="number" name="weight" placeholder="Weight"required="required">
+        <br>
+        <input type="number" name="ap_hi" placeholder="Systolic blood pressure"required="required">
+        <br>
+        <input type="number" name="ap_lo" placeholder="Diastolic blood pressure"required="required">
+        <br>
+        
+        <select id="cholestrol" name="cholestrol" placeholder="cholestrol"required="required">
+            <option>Cholestrol Level</option>
+            <option value="1">Normal</option>
+            <option value="2">Above Normal</option>
+            <option value="3">Well Above Normal</option> </select>
+        
+        <br>
+        
+        <select id="glucose" name="glucose" placeholder="glucose"required="required">
+            <option>Glucose Level</option>
+            <option value="1">Normal</option>
+            <option value="2">Above Normal</option>
+            <option value="3">Well Above Normal</option> </select>
+        <br>
+        <select id="alcohol" name="alcohol" placeholder="alcohol"required="required">
+            <option>Alcohol Consumption</option>
+            <option value="0">No</option>
+            <option value="1">Yes</option></select>
+
+        <br>
+         <select id="activity" name="activity" placeholder="activity"required="required">
+            <option>Physical Activity</option>
+            <option value="0">No</option>
+            <option value="1">Yes</option></select>
+        <br>
+        <select id="bp_category" name="bp_category" placeholder="BP category"required="required">
+            <option>BP category</option>
+            <option value="0">Hypertension Stage 1</option>
+            <option value="1">Hypertension Stage 2</option>
+            <option value="2">Normal</option>
+            <option value="3">Elevated</option>
+        </select>
+        <br><br>
+        <button type="submit">Submit</button>
+
+    </form>
+    {{prediction_text}}
+
+
+</body>
+</html>
+
+ <!--- ['age',
+ 'gender',
+ 
+ 'height',
+ 'weight',
+ 'ap_hi',
+ 'ap_lo',
+
+ 'cholesterol',
+ 'gluc',
+ 'smoke',
+ 'alco',
+ 'active',
+
+ 'bmi',
+
+ 'bp_category'] -->

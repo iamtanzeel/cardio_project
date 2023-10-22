@@ -4,7 +4,7 @@ __pycache__/
 *$py.class
 
 projectenv/
-
+packages.txt
 # C extensions
 *.so
 
